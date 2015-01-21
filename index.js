@@ -53,8 +53,8 @@ function render(resume) {
   Handlebars.registerHelper('commaList', function (items, options){
     var out = '';
     for (var i = 0, l=items.length; i<l; i++){
-      var item = items[i].trim();
-      out = out + options.fn(item) + (i !==(l-1)? ", ": "");
+      var item = items[i];
+      out = out + options.fn(item).trim() + (i !==(l-1)? ", ": "");
     }
     return out;
   });

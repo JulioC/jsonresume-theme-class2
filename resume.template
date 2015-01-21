@@ -230,7 +230,9 @@
         {{else}}
         <strong> Courses: </strong>
         {{/if}}
-        {{#commaList courses}}{{.}}{{/commaList}}
+        {{#commaList courses}}
+          {{.}}
+        {{/commaList}}
         </p>
 			</ul>
 			{{/if}}
