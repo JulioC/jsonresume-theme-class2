@@ -18,44 +18,34 @@ function getMonth(date) {
   }
 }
 
-function createReadableDates(w){
-  if (w.startDate){
-    var startDateYear = (w.startDate || "").substr(0,4);
-    var startDateMonth = getMonth(w.startDate || "");
+function createReadableDates(entry){
+  if (!entry) return;
 
-    w.startDateReadable = startDateMonth + " " + startDateYear;
-  }
+  entry.forEach(function(w) {
+    if (w.startDate){
+      var startDateYear = (w.startDate || "").substr(0,4);
+      var startDateMonth = getMonth(w.startDate || "");
 
-  if (w.endDate){
-    var endDateYear = (w.endDate || "").substr(0,4);
-    var endDateMonth = getMonth(w.endDate || "");
-    w.endDateReadable = endDateMonth + " " + endDateYear;
-  }
-  else
-  {
-    w.endDateReadable = "Present";
-  }
+      w.startDateReadable = startDateMonth + " " + startDateYear;
+    }
+
+    if (w.endDate){
+      var endDateYear = (w.endDate || "").substr(0,4);
+      var endDateMonth = getMonth(w.endDate || "");
+      w.endDateReadable = endDateMonth + " " + endDateYear;
+    }
+    else
+    {
+      w.endDateReadable = "Present";
+    }
+  });
 }
 
 function render(resume) {
 
-  if (resume.work){
-    resume.work.forEach(function(w) {
-      createReadableDates(w);
-    });
-  }
-
-  if (resume.education){
-    resume.education.forEach(function(w) {
-      createReadableDates(w);
-    });
-  }
-
-  if (resume.volunteer){
-    resume.volunteer.forEach(function(w) {
-      createReadableDates(w);
-    });
-  }
+  createReadableDates(resume.work);
+  createReadableDates(resume.education);
+  createReadableDates(resume.volunteer);
 
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
