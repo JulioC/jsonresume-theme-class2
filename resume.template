@@ -16,10 +16,19 @@
 	
 	{{#resume.basics}}
 	<header>
-	<h1>{{name}}</h1>
-	{{#if label}}
-	<h2>{{label}}</h2>
-	{{/if}}
+    <div class="container">
+      <div class="photo">  
+        {{#if picture}}
+        <img class="avatar" src="{{picture}}" alt="avatar" style="width:150px;height:150px"/>
+        {{/if}}
+      </div>
+      <div class="name">  
+        <h1>{{name}}</h1>
+        {{#if label}}
+        <h2>{{label}}</h2>
+        {{/if}}
+      </div>
+    </div>
 	</header>
 
 	<div id="content" class="container">
@@ -84,8 +93,13 @@
 		{{#each resume.work}}
 		<div class="item">
 			{{#if company}}
-			<h3 class="work_name">
+			<h3 class="work_name" >
 				{{company}}
+			{{#if website}}
+			<div class="work_website">
+				<a href="{{website}}">{{website}}</a>
+			</div>
+			{{/if}}
 			</h3>
 			{{/if}}
 			
@@ -112,11 +126,6 @@
 				{{/if}}
 			</div>
 
-			{{#if website}}
-			<div class="work_website">
-				<a href="{{website}}">{{website}}</a>
-			</div>
-			{{/if}}
 
 
 			{{#if summary}}
@@ -200,7 +209,7 @@
 			
 			{{#if institution}}
 			<div class="institution">
-				{{institution}}
+        <h3> {{institution}} </h3>
 			</div>
 			{{/if}}
 
@@ -252,7 +261,7 @@
 		<div class="item">
 			{{#if name}}
 			<div class="name">
-				{{name}}
+        <strong> {{name}} </strong>
 			</div>
 			{{/if}}
 			{{#if level}}
@@ -299,7 +308,7 @@
 		<div class="item">
 			{{#if name}}
 			<div class="name">
-				{{name}}
+			<strong> {{name}} </strong>
 			</div>
 			{{/if}}
 			{{#if keywords.length}}

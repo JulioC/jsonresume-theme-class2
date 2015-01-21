@@ -45,9 +45,9 @@ blockquote {
 /* Header name styling */
 
 header {
-	background: #68B6E3;
-	padding: 50px;
-	margin-bottom: 50px;
+	background: #009DDC;
+	height: 150px;
+	padding: 15px;
 }
 
 header h1 {
@@ -61,6 +61,22 @@ header h2 {
 	font-size: 1em;
 	max-width: 700px;
 	margin: 0 auto;
+}
+
+header .name{
+	float: right;
+  padding-top: 70px;
+}
+header .photo{
+	float: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+img .avatar{
+
 }
 
 /* End header name styling */
@@ -80,10 +96,6 @@ header h2 {
 	margin-bottom: 10px;
 	border-top: 1px #E2E2E2 solid;
 	border-bottom: 1px #E2E2E2 solid;
-}
-#basics h3 {
-	margin-top: 1.5em;
-	margin-bottom: 10px;
 }
 #basics .contact strong {
 	line-height: 1.3;
@@ -117,23 +129,35 @@ header h2 {
 	width: 50%;
 }
 
-.username{
-	margin-top: 10px;
+#education .item{
+}
+#education.study_date,{
+	/*margin-bottom: 10px;*/
+	float: right;
+  color: yellow;
 }
 
 /* End 'Basics' Styling */
 
 /* Work and volunteering experience styling */
 
-.work_date,
 .work_position,
-.work_website,
 .institution,
-.study_date,
 .qualification {
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 	float: left;
-	width: 30%;
+}
+
+
+.study_date,{
+	/*margin-bottom: 10px;*/
+	float: right;
+  color: red;
+}
+
+.work_date,
+.work_website{
+	float: right;
 }
 
 .courses {
@@ -152,6 +176,10 @@ header h2 {
 
 #work .item,
 #volunteer .item {
+	margin: 25px 0;
+}
+
+# .item {
 	margin: 25px 0;
 }
 
@@ -189,5 +217,7 @@ header h2 {
 #interests {
 	clear: both;
 }
+
+h3{font-size:1.17em;margin:0em 0}
 
 /* End styling */
