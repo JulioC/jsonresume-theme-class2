@@ -39,17 +39,23 @@ function createReadableDates(w){
 
 function render(resume) {
 
-  resume.work.forEach(function(w) {
-    createReadableDates(w);
-  });
+  if (resume.work){
+    resume.work.forEach(function(w) {
+      createReadableDates(w);
+    });
+  }
 
-  resume.education.forEach(function(w) {
-    createReadableDates(w);
-  });
+  if (resume.education){
+    resume.education.forEach(function(w) {
+      createReadableDates(w);
+    });
+  }
 
-  resume.volunteer.forEach(function(w) {
-    createReadableDates(w);
-  });
+  if (resume.volunteer){
+    resume.volunteer.forEach(function(w) {
+      createReadableDates(w);
+    });
+  }
 
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
