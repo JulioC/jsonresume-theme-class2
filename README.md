@@ -1,4 +1,4 @@
-# Class2 theme for JSONResume [![](https://badge.fury.io/js/jsonresume-theme-class2.svg)](http://badge.fury.io/js/jsonresume-theme-class)
+# Class2 theme for JSONResume [![](https://badge.fury.io/js/jsonresume-theme-class2.svg)](http://badge.fury.io/js/jsonresume-theme-class2)
 
 
 First, check out [JSON Resume](http://jsonresume.org/)
