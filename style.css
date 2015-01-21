@@ -141,13 +141,15 @@ img .avatar{
 
 /* Work and volunteering experience styling */
 
-.work_position,
 .institution,
+.work_date,
 .qualification {
 	/*margin-bottom: 10px;*/
 	float: left;
 }
 
+.work_position{
+}
 
 .study_date,{
 	/*margin-bottom: 10px;*/

@@ -26,6 +26,7 @@
         <h1>{{name}}</h1>
         {{#if label}}
         <h2>{{label}}</h2>
+        <h2>{{josh}}</h2>
         {{/if}}
       </div>
     </div>
@@ -95,38 +96,34 @@
 			{{#if company}}
 			<h3 class="work_name" >
 				{{company}}
+
+			<div class="work_date">
+				{{#if startDateReadable}}
+				<span class="startDate">
+          {{startDateReadable}} - 
+				</span>
+				{{/if}}
+				{{#if endDateReadable}}
+				<span class="endDate">
+          {{endDateReadable}}
+				</span>
+				{{/if}}
+			</div>
+			</h3>
+			{{/if}}
+			
 			{{#if website}}
 			<div class="work_website">
 				<a href="{{website}}">{{website}}</a>
 			</div>
 			{{/if}}
-			</h3>
-			{{/if}}
-			
+
+
 			{{#if position}}
 			<div class="work_position">
 				{{position}}
 			</div>
 			{{/if}}
-
-			<div class="work_date">
-				{{#if startDate}}
-				<span class="startDate">
-					{{startDate}}
-				</span>
-				{{/if}}
-				{{#if endDate}}
-				<span class="endDate">
-					- {{endDate}}
-				</span>
-				{{else}}
-				<span class="endDate">
-					- Present
-				</span>
-				{{/if}}
-			</div>
-
-
 
 			{{#if summary}}
 			<div class="summary">
@@ -164,18 +161,14 @@
 			{{#if website}}
 
 			<div class="work_date">
-				{{#if startDate}}
+				{{#if startDateReadable}}
 				<span class="startDate">
-					{{startDate}}
+					{{startDateReadable}} - 
 				</span>
 				{{/if}}
-				{{#if endDate}}
+				{{#if endDateReadable}}
 				<span class="endDate">
-					- {{endDate}}
-				</span>
-				{{else}}
-				<span class="endDate">
-					- Present
+					{{endDateReadable}}
 				</span>
 				{{/if}}
 			</div>
@@ -214,18 +207,14 @@
 			{{/if}}
 
 			<div class="study_date">
-				{{#if startDate}}
+				{{#if startDateReadable}}
 				<span class="startDate">
-					{{startDate}}
+					{{startDateReadable}} -
 				</span>
 				{{/if}}
-				{{#if endDate}}
+				{{#if endDateReadable}}
 				<span class="endDate">
-					- {{endDate}}
-				</span>
-				{{else}}
-				<span class="endDate">
-					- Present
+					{{endDateReadable}}
 				</span>
 				{{/if}}
 			</div>
