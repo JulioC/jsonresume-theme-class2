@@ -50,6 +50,14 @@ function render(resume) {
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
 
+  Handlebars.registerHelper('commaList', function (items, options){
+    var out = '';
+    for (var i = 0, l=items.length; i<l; i++){
+      var item = items[i].trim();
+      out = out + options.fn(item) + (i !==(l-1)? ", ": "");
+    }
+    return out;
+  });
 	return Handlebars.compile(template)({
 		css: css,
 		resume: resume

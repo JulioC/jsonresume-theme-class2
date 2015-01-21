@@ -198,11 +198,9 @@
 		<h2>Education and Training</h2>
 		{{#each resume.education}}
 		<div class="item">
-			
 			{{#if institution}}
 			<div class="study_name">
         <h3> {{institution}} 
-        
 			<div class="study_date">
 				{{#if startDateReadable}}
 				<span class="startDate">
@@ -215,24 +213,25 @@
 				</span>
 				{{/if}}
 			</div>
-        
         </h3>
 			</div>
 			{{/if}}
 
-
 			{{#if area}}
       <div class="study_area">
-        <p> {{area}} </p>
+        {{area}} 
       </div>
 			{{/if}}
 
 			{{#if courses.length}}
-        <p> Courses: </p>
-			<ul class="courses">
-				{{#each courses}}
-				<li>{{.}}</li>
-				{{/each}}
+      <p>
+        {{#if studyType}}
+        <strong> {{studyType}}: </strong>
+        {{else}}
+        <strong> Courses: </strong>
+        {{/if}}
+        {{#commaList courses}}{{.}}{{/commaList}}
+        </p>
 			</ul>
 			{{/if}}
 
