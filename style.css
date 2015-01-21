@@ -131,11 +131,6 @@ img .avatar{
 
 #education .item{
 }
-#education.study_date,{
-	/*margin-bottom: 10px;*/
-	float: right;
-  color: yellow;
-}
 
 /* End 'Basics' Styling */
 
@@ -151,13 +146,8 @@ img .avatar{
 .work_position{
 }
 
-.study_date,{
-	/*margin-bottom: 10px;*/
-	float: right;
-  color: red;
-}
-
 .work_date,
+.study_date,
 .work_website{
 	float: right;
 }
