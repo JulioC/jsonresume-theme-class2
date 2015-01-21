@@ -95,7 +95,6 @@
 			{{#if company}}
 			<h3 class="work_name" >
 				{{company}}
-
 			<div class="work_date">
 				{{#if startDateReadable}}
 				<span class="startDate">
@@ -117,7 +116,6 @@
 			</div>
 			{{/if}}
 
-
 			{{#if position}}
 			<div class="work_position">
 				{{position}}
@@ -129,6 +127,7 @@
 				<p>{{summary}}</p>
 			</div>
 			{{/if}}
+
 			{{#if highlights.length}}
 			<ul class="highlights">
 				{{#each highlights}}
@@ -164,15 +163,15 @@
 			</h3>
 			{{/if}}
 			
-			{{#if position}}
-			<div class="work_position">
-				{{position}}
-			</div>
-			{{/if}}
-
 			{{#if website}}
 			<div class="work_website">
 				<a href="{{website}}">{{website}}</a>
+			</div>
+			{{/if}}
+
+			{{#if position}}
+			<div class="work_position">
+				{{position}}
 			</div>
 			{{/if}}
 
@@ -196,7 +195,7 @@
 	
 	{{#if resume.education.length}}
 	<section id="education">
-		<h2>Education</h2>
+		<h2>Education and Training</h2>
 		{{#each resume.education}}
 		<div class="item">
 			
@@ -222,13 +221,14 @@
 			{{/if}}
 
 
-			{{#if qualification}}
-			<div class="qualification">
-				{{qualification}}
-			</div>
+			{{#if area}}
+      <div class="study_area">
+        <p> {{area}} </p>
+      </div>
 			{{/if}}
 
 			{{#if courses.length}}
+        <p> Courses: </p>
 			<ul class="courses">
 				{{#each courses}}
 				<li>{{.}}</li>

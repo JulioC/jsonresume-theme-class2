@@ -142,6 +142,8 @@ img .avatar{
 	float: left;
 }
 
+.study_area,
+.study_position
 .work_position{
 }
 
@@ -160,12 +162,14 @@ img .avatar{
 }
 
 #work,
+#education,
 #volunteer {
 	padding-bottom: 5px;
 	border-bottom: 1px #E2E2E2 solid;
 }
 
 #work .item,
+#education .item,
 #volunteer .item {
 	margin: 25px 0;
 }
