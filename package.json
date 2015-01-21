@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/Charlotteis/jquintus-theme-class"
   },
+  "scripts" : {
+	"test": "./node_modules/.bin/resume serve"
+  },
   "license": "MIT",
   "dependencies": {
     "handlebars": "^2.0.0-alpha.4",
