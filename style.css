@@ -126,7 +126,8 @@ img .avatar{
 
 #profiles .item {
 	float: left;
-	width: 50%;
+  text-align:center;
+	width: 33%;
 }
 
 #education .item{
