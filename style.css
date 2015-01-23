@@ -105,11 +105,6 @@ img .avatar{
 
 /* Styling Basics (Name, Contact, About, Profiles) */
 
-#basics {
-  margin-bottom: 10px;
-  border-top: 1px #E2E2E2 solid;
-  border-bottom: 1px #E2E2E2 solid;
-}
 
 .contact h3 {
   padding-bottom: 10px;
@@ -170,10 +165,7 @@ img .avatar{
   margin-top: 10px;
 }
 
-#work,
-#education,
-#volunteer {
-  padding-bottom: 5px;
+.underlined{
   border-bottom: 1px #E2E2E2 solid;
 }
 
@@ -190,21 +182,6 @@ img .avatar{
 /* End work and volunteering */
 
 /* Skills, languages, interests and references styling */
-
-#skills {
-  margin-bottom: 10px;
-  border-bottom: 1px #E2E2E2 solid;
-  padding-bottom: 5px;
-}
-
-#skills .item,
-#languages .item {
-  margin: 0 0 25px 0;
-}
-
-#interests .item {
-  margin-bottom: 25px;
-}
 
 #skills {
   overflow: hidden;

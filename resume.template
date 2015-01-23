@@ -10,7 +10,6 @@
 	<style>
 	{{{css}}}
 	</style>
-	
 	</head>
 	<body>
 	
@@ -34,7 +33,7 @@
 	<div id="content" class="container">
 	<section id="basics">
 		<div class="contact">
-		<h3>Contact</h3>
+		<h2 class="underlined">Contact</h2>
 		{{#if website}}
 		<div class="website">
 			<strong>Website</strong>
@@ -89,7 +88,7 @@
 
 	{{#if resume.work.length}}
 	<section id="work">
-		<h2>Work</h2>
+		<h2 class="underlined">Work</h2>
 		{{#each resume.work}}
 		<div class="item">
 			{{#if company}}
@@ -142,7 +141,7 @@
 
 	{{#if resume.volunteer.length}}
 	<section id="volunteer">
-		<h2>Projects</h2>
+		<h2 class="underlined">Projects</h2>
 		{{#each resume.volunteer}}
 		<div class="item">
 			{{#if organization}}
@@ -195,7 +194,7 @@
 	
 	{{#if resume.education.length}}
 	<section id="education">
-		<h2>Education and Training</h2>
+		<h2 class="underlined">Education and Training</h2>
 		{{#each resume.education}}
 		<div class="item">
 			{{#if institution}}
@@ -249,7 +248,7 @@
 	
 	{{#if resume.skills.length}}
 	<section id="skills">
-		<h2>Skills</h2>
+		<h2 class="underlined">Skills</h2>
 		{{#each resume.skills}}
 		<div class="item">
 			{{#if name}}
@@ -276,7 +275,7 @@
 
 	{{#if resume.languages.length}}
 	<section id="languages">
-		<h2>Languages</h2>
+		<h2 class="underlined">Languages</h2>
 		{{#each resume.languages}}
 		<div class="item">
 			{{#if language}}
@@ -296,7 +295,7 @@
 
 	{{#if resume.interests.length}}
 	<section id="interests">
-		<h2>Interests</h2>
+		<h2 class="underlined">Interests</h2>
 		{{#each resume.interests}}
 		<div class="item">
 			{{#if name}}
@@ -318,7 +317,7 @@
 	
 	{{#if resume.references.length}}
 	<section id="references">
-		<h2>References</h2>
+		<h2 class="underlined">References</h2>
 		{{#each resume.references}}
 		<div class="item">
 			{{#if reference}}
