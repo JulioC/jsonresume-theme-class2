@@ -49,6 +49,13 @@ header {
   height: 150px;
   padding: 15px;
 }
+@media print{
+  header {
+    background: #009DDC;
+    height: 120px;
+    padding: 15px;
+  }
+}
 
 header h1 {
   color: #FFFFFF;
@@ -73,6 +80,12 @@ header .photo{
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+@media print{
+  header .photo{
+    display: none;
+  }
 }
 
 img .avatar{
