@@ -33,7 +33,7 @@
 	<div id="content" class="container">
 	<section id="basics">
 		<div class="contact">
-		<h2 class="underlined">Contact</h2>
+		<h2 class="underlined">Summary</h2>
 		{{#if website}}
 		<div class="website">
 			<strong>Website</strong>

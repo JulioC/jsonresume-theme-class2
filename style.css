@@ -9,7 +9,7 @@ body {
 }
 
 em {
-  color: #999;
+  color: #444;
 }
 
 p {
@@ -32,7 +32,7 @@ ul {
   margin-bottom: 0;
 }
 section {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 blockquote {
@@ -88,10 +88,6 @@ header .photo{
   }
 }
 
-img .avatar{
-
-}
-
 /* End header name styling */
 
 /* Set width of main body of CV */
@@ -106,9 +102,6 @@ img .avatar{
 /* Styling Basics (Name, Contact, About, Profiles) */
 
 
-.contact h3 {
-  padding-bottom: 10px;
-}
 
 .website,
 .email,
@@ -125,15 +118,14 @@ img .avatar{
 
 #profiles {
   overflow: hidden;
+  margin: 0px;
 }
 
 #profiles .item {
   float: left;
   text-align:center;
   width: 33%;
-}
-
-#education .item{
+  padding-bottom: 10px;
 }
 
 /* End 'Basics' Styling */
@@ -142,19 +134,19 @@ img .avatar{
 
 .institution,
 .qualification {
-  /*margin-bottom: 10px;*/
   float: left;
-}
-
-.study_area,
-.study_position
-.work_position{
 }
 
 .work_date,
 .study_date,
 .work_website{
   float: right;
+}
+
+.work_position,
+.study_area{
+  font-style: italic;
+  color: #444;
 }
 
 .courses {
