@@ -1,11 +1,11 @@
 {
   "name": "jsonresume-theme-class2",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Theme for JSONResume.org inspired by the Class theme.",
   "author": "Josh Quintus",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Charlotteis/jquintus-theme-class"
+    "url": "https://github.com/jquintus/jsonresume-theme-class"
   },
   "scripts" : {
     "test": "./node_modules/.bin/resume serve"
