@@ -14,21 +14,21 @@
 	<body>
 	
 	{{#resume.basics}}
-	<header>
-    <div class="container">
-      <div class="photo">  
+    <div id="header">
+      <div id="header-content">
         {{#if picture}}
-        <img class="avatar" src="{{picture}}" alt="avatar" style="width:150px;height:150px"/>
+        <div class="photo">
+          <img class="avatar" src="{{picture}}" alt="avatar" style="width:150px;height:150px"/>
+        </div>
         {{/if}}
-      </div>
-      <div class="name">  
-        <h1>{{name}}</h1>
-        {{#if label}}
-        <h2>{{label}}</h2>
-        {{/if}}
+        <div class="header-title">  
+          <h1 id="header-title">{{name}}</h1>
+          {{#if label}}
+          <h2 id="header-subtitle">{{label}}</h2>
+          {{/if}}
+        </div>
       </div>
     </div>
-	</header>
 
 	<div id="content" class="container">
 	<section id="basics">

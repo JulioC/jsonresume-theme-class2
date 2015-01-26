@@ -44,26 +44,46 @@ blockquote {
 
 /* Header name styling */
 
-header {
+#header {
   background: #009DDC;
   height: 150px;
   padding: 15px;
 }
-@media print{
-  header {
-    background: #009DDC;
-    height: 120px;
-    padding: 15px;
-  }
-}
-
-header h1 {
-  color: #FFFFFF;
+#header-content {
   max-width: 700px;
   margin: 0 auto;
 }
+.header-title{ 
+  margin: 0px; 
+  padding: 0px; 
+  float: right; 
+}
+.avatar{ 
+  float: left; 
+}
 
-header h2 {
+
+@media print{
+  #header {
+    background: #009DDC;
+    height: 50px;
+  }
+
+  .photo{
+    display: none;
+    float: left;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
+
+#header-title {
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+#header-subtitle {
   color: #F3F3F3;
   font-size: 1em;
   max-width: 700px;
@@ -74,18 +94,12 @@ header .name{
   float: right;
   padding-top: 70px;
 }
-header .photo{
+.photo{
   float: left;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
-}
-
-@media print{
-  header .photo{
-    display: none;
-  }
 }
 
 /* End header name styling */
