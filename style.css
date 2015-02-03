@@ -175,13 +175,14 @@ header .name{
   border-bottom: 1px #E2E2E2 solid;
 }
 
-#work .item,
-#education .item,
-#volunteer .item {
-  margin: 25px 0;
+.skill {
+  margin:10px 5%;
+  float:left;
+  width:40%;
+  min-width:100px;
 }
 
-# .item {
+.item {
   margin: 25px 0;
 }
 

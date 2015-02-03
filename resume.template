@@ -250,7 +250,7 @@
 	<section id="skills">
 		<h2 class="underlined">Skills</h2>
 		{{#each resume.skills}}
-		<div class="item">
+		<div class="skill">
 			{{#if name}}
 			<div class="name">
         <strong> {{name}} </strong>
@@ -272,6 +272,19 @@
 		{{/each}}
 	</section>
 	{{/if}}
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script>
+    var highestBox = 0;
+    $('.skill').each(function(){
+
+    if($(this).height() > highestBox)
+      highestBox = $(this).height();
+    })
+
+    $('.skill').each(function(){
+      $(this).height(highestBox);
+    })
+  </script>
 
 	{{#if resume.languages.length}}
 	<section id="languages">
