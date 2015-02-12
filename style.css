@@ -134,6 +134,11 @@ header .name{
   overflow: hidden;
   margin: 0px;
 }
+@media print{
+  #profiles {
+    display: none;
+  }
+}
 
 #profiles .item {
   float: left;
