@@ -1,15 +1,23 @@
 <!doctype html>
 <html>
 	<head>
-	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-  <title>{{#resume.basics}}{{name}} - {{label}}{{/resume.basics}}</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 
-	<style>
-	{{{css}}}
-	</style>
+    <title>
+    {{#resume.basics}}
+      {{#if today}}
+        {{name}} - {{label}} - {{today}}
+      {{else}}
+        {{name}} - {{label}}
+      {{/if}}
+    {{/resume.basics}}
+    </title>
+
+    <style>
+    {{{css}}}
+    </style>
 	</head>
 	<body>
 	

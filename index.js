@@ -41,11 +41,18 @@ function createReadableDates(entry){
   });
 }
 
+function addTodaysDate(resume){
+  var today = new Date();
+  resume.basics.today = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+}
+
 function render(resume) {
 
   createReadableDates(resume.work);
   createReadableDates(resume.education);
   createReadableDates(resume.volunteer);
+  
+  addTodaysDate(resume);
 
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
