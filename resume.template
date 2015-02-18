@@ -100,21 +100,23 @@
 		{{#each resume.work}}
 		<div class="item">
 			{{#if company}}
-			<h3 class="work_name" >
-				{{company}}
-			<div class="work_date">
-				{{#if startDateReadable}}
-				<span class="startDate">
-          {{startDateReadable}} - 
-				</span>
-				{{/if}}
-				{{#if endDateReadable}}
-				<span class="endDate">
-          {{endDateReadable}}
-				</span>
-				{{/if}}
-			</div>
-			</h3>
+      <section id="{{company}}">
+        <h3 class="work_name" >
+          {{company}}
+        <div class="work_date">
+          {{#if startDateReadable}}
+          <span class="startDate">
+            {{startDateReadable}} - 
+          </span>
+          {{/if}}
+          {{#if endDateReadable}}
+          <span class="endDate">
+            {{endDateReadable}}
+          </span>
+          {{/if}}
+        </div>
+        </h3>
+      </section>
 			{{/if}}
 			
 			{{#if website}}
@@ -148,26 +150,28 @@
 	{{/if}}
 
 	{{#if resume.volunteer.length}}
-	<section id="volunteer">
+	<section id="projects">
 		<h2 class="underlined">Projects</h2>
 		{{#each resume.volunteer}}
 		<div class="item">
 			{{#if organization}}
-			<h3 class="company">
-				{{organization}}
-			<div class="work_date">
-				{{#if startDateReadable}}
-				<span class="startDate">
-          {{startDateReadable}} - 
-				</span>
-				{{/if}}
-				{{#if endDateReadable}}
-				<span class="endDate">
-          {{endDateReadable}}
-				</span>
-				{{/if}}
-			</div>
-			</h3>
+      <section id="{{organization}}">
+        <h3 class="company">
+          {{organization}}
+        <div class="work_date">
+          {{#if startDateReadable}}
+          <span class="startDate">
+            {{startDateReadable}} - 
+          </span>
+          {{/if}}
+          {{#if endDateReadable}}
+          <span class="endDate">
+            {{endDateReadable}}
+          </span>
+          {{/if}}
+        </div>
+        </h3>
+      </section>
 			{{/if}}
 			
 			{{#if website}}
@@ -206,22 +210,24 @@
 		{{#each resume.education}}
 		<div class="item">
 			{{#if institution}}
-			<div class="study_name">
-        <h3> {{institution}} 
-			<div class="study_date">
-				{{#if startDateReadable}}
-				<span class="startDate">
-					{{startDateReadable}} -
-				</span>
-				{{/if}}
-				{{#if endDateReadable}}
-				<span class="endDate">
-					{{endDateReadable}}
-				</span>
-				{{/if}}
-			</div>
-        </h3>
-			</div>
+      <section id="{{institution}}">
+        <div class="study_name">
+          <h3> {{institution}} 
+            <div class="study_date">
+              {{#if startDateReadable}}
+              <span class="startDate">
+                {{startDateReadable}} -
+              </span>
+              {{/if}}
+              {{#if endDateReadable}}
+              <span class="endDate">
+                {{endDateReadable}}
+              </span>
+              {{/if}}
+            </div>
+          </h3>
+        </div>
+      </section>
 			{{/if}}
 
 			{{#if area}}
